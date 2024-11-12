@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="img/icon.svg" type="image/xml" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html"
+          ><img src="img/cahya.png" alt="logo" height="75px"
+        /></a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="portofolio.html"
+              ><i class="fas fa-briefcase"></i> Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fas fa-user"></i> About</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+          <li>
+            <a href="blog.html"><i class="fas fa-blog"></i> Blog</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <a href="#img1" data-lightbox="gallery">
+          <div class="gallery-item">
+            <img src="img/xD.jpg" alt="Kegiatan ketika kelas" />
+            <div class="overlay">Kegiatan ketika kelas</div>
+          </div>
+        </a>
+
+        <a href="#img2" data-lightbox="gallery">
+          <div class="gallery-item">
+            <img src="img/kondangan.jpg" alt="Menghadiri pernikahan" />
+            <div class="overlay">Menghadiri pernikahan</div>
+          </div>
+        </a>
+        <a href="#img3" data-lightbox="gallery">
+          <div class="gallery-item">
+            <img src="img/kondanganpt2.jpg" alt="Tiga sekawan" />
+            <div class="overlay">Kondangan</div>
+          </div>
+        </a>
+        <a href="#img4" data-lightbox="gallery">
+          <div class="gallery-item">
+            <img src="img/fotoca.jpg" alt="profile" />
+            <div class="overlay">Profile</div>
+          </div>
+        </a>
+        <a href="#img5" data-lightbox="gallery">
+          <div class="gallery-item">
+            <img
+              src="img/fotobersamakaryawan.jpg"
+              alt="foto bersama karyawan"
+            />
+            <div class="overlay">Foto bersama karyawan</div>
+          </div>
+        </a>
+        <a href="#img6" data-lightbox="gallery">
+          <div class="gallery-item">
+            <img src="img/closeupxD.jpg" alt="foto profile" />
+            <div class="overlay">Foto profile</div>
+          </div>
+        </a>
+        <a href="#img7" data-lightbox="gallery">
+          <div class="gallery-item">
+            <img src="img/pendaftaranmwbaru.jpg" alt="PKKMB" />
+            <div class="overlay">PKKMB</div>
+          </div>
+        </a>
+      </div>
+      <div class="click-instruction">
+        <p>Silahkan klik gambar untuk melihat lebih jelas</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Cahya Apriyana | All Rights Reserved</p>
+        <div class="social-links">
+          <a href="https://linkedin.com" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <div id="imageViewer" class="image-viewer">
+      <span class="close-viewer"></span>
+      <img class="viewer-content" id="viewerImage" />
+      <div id="viewerCaption"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+    <a href="#" class="lightbox" id="img1">
+      <span style="background-image: url('img/xD.jpg')"></span>
+    </a>
+    <a href="#" class="lightbox" id="img2">
+      <span style="background-image: url('img/kondangan.jpg')"></span>
+    </a>
+    <a href="#" class="lightbox" id="img3">
+      <span style="background-image: url('img/kondanganpt2.jpg')"></span>
+    </a>
+    <a href="#" class="lightbox" id="img4">
+      <span style="background-image: url('img/fotoca.jpg')"></span>
+    </a>
+    <a href="#" class="lightbox" id="img5">
+      <span style="background-image: url('img/fotobersamakaryawan.jpg')"></span>
+    </a>
+    <a href="#" class="lightbox" id="img6">
+      <span style="background-image: url('img/closeupxD.jpg')"></span>
+    </a>
+    <a href="#" class="lightbox" id="img7">
+      <span style="background-image: url('img/pendaftaranmwbaru.jpg')"></span>
+    </a>
+  </body>
+</html>
